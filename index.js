@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const authController = require("./controllers/authController");
 const productController = require("./controllers/productController");
 const uploadController = require("./controllers/uploadController");
+const port = process.env.PORT || 4000
 
 const app = express();
 
