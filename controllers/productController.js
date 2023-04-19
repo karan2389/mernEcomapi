@@ -2,7 +2,7 @@ const productController = require("express").Router();
 const Product = require("../models/Product");
 const { verifyToken, verifyTokenAdmin } = require("../middlewares/verifyToken");
  
-
+ 
 //get all
 productController.get("/",  async (req, res) => {
   try {
