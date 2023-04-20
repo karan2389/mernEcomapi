@@ -23,13 +23,5 @@
     "nodemon": "^2.0.22",
     "path": "^0.12.7",
     "uuid": "^9.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/karan2389/istore-mern-stack-app.git"
-  },
-  "bugs": {
-    "url": "https://github.com/karan2389/istore-mern-stack-app/issues"
-  },
-  "homepage": "https://github.com/karan2389/istore-mern-stack-app#readme"
+  }
 }
