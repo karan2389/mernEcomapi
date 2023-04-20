@@ -22,8 +22,6 @@ const connect = async () => {
   }
 };
 
-
-
 //ROUTES & MIDDLEWARES
 app.use(cors());
 app.use(express.json());
@@ -33,8 +31,12 @@ app.use("/auth", authController);
 app.use("/product", productController);
 app.use("/upload", uploadController);
 
+//STATIC FILES
+app.use(express.static(path.join(__dirname, "./client/build")));
 
-
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 //SERVER SETUP
 app.listen(port, () => {
