@@ -6,7 +6,7 @@ const authController = require("./controllers/authController");
 const productController = require("./controllers/productController");
 const uploadController = require("./controllers/uploadController");
 const path = require("path");
-const port = process.env.PORT || 4000;
+const port = process.env.PORT;
 
 const app = express();
 
@@ -36,5 +36,5 @@ app.use("/upload", uploadController);
 //SERVER SETUP
 app.listen(port, () => {
   connect();
-  console.log("Connected to backend!!");
+  console.log(`server running`);
 });
