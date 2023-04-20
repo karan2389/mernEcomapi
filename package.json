@@ -9,7 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "flag": "^5.0.1",
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
@@ -18,9 +19,18 @@
     "mongodb": "^5.3.0",
     "mongoose": "^7.0.3",
     "multer": "^1.4.5-lts.1",
-    "node": "^18.15.0",
+    "node": "^ 19.8.1 ",
     "nodemon": "^2.0.22",
     "path": "^0.12.7",
     "uuid": "^9.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karan2389/istore-mern-stack-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/karan2389/istore-mern-stack-app/issues"
+  },
+  "homepage": "https://github.com/karan2389/istore-mern-stack-app#readme",
+  "description": ""
 }

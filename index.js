@@ -22,12 +22,7 @@ const connect = async () => {
   }
 };
 
-//STATIC FILES
-app.use(express.static(path.join(__dirname, "./client/build")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
 
 //ROUTES & MIDDLEWARES
 app.use(cors());
@@ -38,8 +33,11 @@ app.use("/auth", authController);
 app.use("/product", productController);
 app.use("/upload", uploadController);
 
+
+
+
 //SERVER SETUP
-app.listen(4000, () => {
+app.listen(port, () => {
   connect();
   console.log("Connected to backend!!");
 });
